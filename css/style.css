@@ -34,11 +34,12 @@ a {
 p {
 	line-height: 150%;
 	font-size: 19px;
+	text-indent: 45px;
 }
 
 /* -------------------------------- 
 
-Modules - reusable parts of our design
+Modules - reusable parts
 
 -------------------------------- */
 .cd-container {
@@ -71,7 +72,7 @@ Main components
 -------------------------------- */
 .cd-scrolling-bg2 figure{
 	float: right;
-	margin-top: 45px;
+	margin-top: 40px;
 	margin-left: 15px;
 }
 
@@ -83,7 +84,7 @@ Main components
 .fig2 figure{
 	float: left;
 	padding-right: 20px;
-}	
+}
 
 figure img {
 		border-bottom-style: solid;
@@ -99,6 +100,7 @@ figure figcaption {
 		padding-top: 10px;
 		padding-left: 5px;
 		text-align: left;
+		line-height: 16px;
 }
 
 blockquote {
@@ -159,16 +161,32 @@ ul.ref{
 .cd-header #cd-logo {
   float: left;
   margin: 10px 0 0 5%;
+  
 }
 .cd-header #cd-logo img {
   display: block;
+
 }
+
+.cd-header #cd-logo a {
+  color: black;
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-header {
     height: 70px;
   }
+  .cd-header #cd-logo img {
+  display: block;
+  margin-bottom: 5px;
+}
+  .cd-header #cd-logo a {
+  color: black;
+  font-size: 16px;
+}
   .cd-header #cd-logo {
-    margin: 23px 0 0 5%;
+    margin: 20px 0 0 5%;
   }
 }
 
@@ -204,9 +222,9 @@ ul.ref{
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  background: #2f292a;
+  background: #dddddd;
   border-top: 1px solid #453c3d;
-  color: #8e7d7f;
+  color: #444040;
 }
 
 .cd-main-nav li a.current{
@@ -214,7 +232,7 @@ ul.ref{
    background:#000000;
 }
 
-@media only screen and (min-width: 790px) { /* add this to min width*/
+@media only screen and (min-width: 830px) { /* add this to min width*/
   .cd-main-nav {
     width: auto;
     height: auto;
@@ -372,23 +390,23 @@ ul.ref{
 }
 /*ada*/
 .cd-fixed-bg.cd-bg-11 {
-  background-image: url("../img/cd-background-11.jpg");
+  background-color: #0b3c5d;
 }
 
 .cd-fixed-bg.cd-bg-12 {
-  background-image: url("../img/cd-background-12.jpg");
+  background-color: #328cc1;
 }
 
 .cd-fixed-bg.cd-bg-13 {
-  background-image: url("../img/cd-background-13.jpg");
+  background-color: #d9b310;
 }
 
 .cd-fixed-bg.cd-bg-14 {
-  background-image: url("../img/cd-background-14.jpg");
+  background-color: #4abdac;
 }
 
 .cd-fixed-bg.cd-bg-15 {
-  background-image: url("../img/cd-background-15.jpg");
+  background-color: #192231;
 }
 /*ed*/
 .cd-fixed-bg.cd-bg-16 {
@@ -404,19 +422,19 @@ ul.ref{
 }
 
 .cd-fixed-bg.cd-bg-19 {
-  background-image: url("../img/cd-background-5.jpg");
+  background-image: url("../img/cd-background-19.jpg");
 }
 
 .cd-fixed-bg.cd-bg-20 {
-  background-image: url("../img/cd-background-5.jpg");
+  background-image: url("../img/cd-background-20.jpg");
 }
 
 .cd-fixed-bg.cd-bg-21 {
-  background-image: url("../img/cd-background-5.jpg");
+  background-image: url("../img/cd-background-21.jpg");
 }
 
 .cd-fixed-bg.cd-bg-22 {
-  background-image: url("../img/cd-background-5.jpg");
+  background-image: url("../img/cd-background-22.jpg");
 }
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
@@ -489,6 +507,7 @@ ul.ref{
 @media only screen and (max-width: 773px) {
 	.cd-scrolling-bg2 figure{
 		float: none;
+		margin: 0 auto;
 		padding: 0;
 	}
 	figure figcaption {
@@ -498,21 +517,19 @@ ul.ref{
 	.fig1 figure{
 		margin: 0 auto;
 	}
+	.fig2 figure{
+		margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width: 1170px){
 	.cd-fixed-bg{
-		min-height: 70%;
+		min-height: 80%;
 		width: 100%;
 	}
 }
 
-@media only screen and (max-width: 1024px){
-	.cd-fixed-bg{
-		min-height: 62%;
-		width: 100%;
-	}
-}
+
 
 @media only screen and (max-width: 1024px){
 	.cd-fixed-bg{
@@ -552,4 +569,3 @@ ul.ref{
 		font-size: 1.5rem;
 	}
 }
-	}
